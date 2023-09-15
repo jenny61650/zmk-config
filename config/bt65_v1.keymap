@@ -54,11 +54,11 @@
         // | BT_PRV| BT_NXT|  ALT  |            SPACE                 | RGB_BRI |  1  | RGB_SPD| RGB_EFF| RGB_SAD |BL_DEC|
         // --------------------------------------------------------------------------------------------------
       bindings = <
-        &kp GRAVE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &bl &kp &rgb_ug RGB_TOG &rgb_ug
-        &trans &trans &trans &trans &rgb_ug RGB_HUI &rgb_ug RGB_HUD &trans &trans &trans &trans &trans &kp SLCK &trans  &sys_reset  &rgb_ug GB_HUI
-        &trans   &trans &trans &trans &rgb_ug RGB_BRI &rgb_ug RGB_BRD &trans &trans &trans &trans &trans  &trans  &bootloader &bl RGB_HUD
+        &kp GRAVE &kp F1 &kp F2 &kp F3 &kp F4 &kp F5 &kp F6 &kp F7 &kp F8 &kp F9 &kp F10 &kp F11 &kp F12 &kp PRSCRN &rgb_ug RGB_TOG &rgb_ug RGB_TOG 
+        &trans &trans &trans &trans &rgb_ug RGB_HUI &rgb_ug RGB_HUD &trans &trans &trans &trans &trans &kp SLCK &trans  &sys_reset  &rgb_ug RGB_HUI
+        &trans   &trans &trans &trans &rgb_ug RGB_BRI &rgb_ug RGB_BRD &trans &trans &trans &trans &trans  &trans  &bootloader &rgb_ug RGB_HUD
         &trans &none &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE &bl BL_INC &bl BL_DEC &trans &trans &trans &trans &trans &trans  &trans &trans &bl BL_INC
-        &bt BT_PRV &bt BT_NXT  &trans              &trans                            &rgb_ug  &trans   &rgb_ug &rgb_ug &rgb_ug &rgb_ug BL_DEC
+        &bt BT_PRV &bt BT_NXT  &trans              &trans                            &rgb_ug RGB_BRI &trans   &rgb_ug RGB_SPD &rgb_ug RGB_EFF &rgb_ug RGB_SAD &bl BL_DEC
       >;
       sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
     };
